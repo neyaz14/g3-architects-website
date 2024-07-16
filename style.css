@@ -10,7 +10,8 @@ header{
 
     background: rgba(255, 144, 14, 0.1);
     /* width: 1920px; */
-    height: 1322px;
+    height: 1070px;
+    margin-bottom: 20px;
 }
 .navbar , .banner{
     max-width: 1440px;
@@ -132,12 +133,95 @@ header{
         margin: 0 auto;
         margin-top: 20px;
     }
-
-    /*  */
-
-
-
-
-
+    .banner-description{
+        max-width: 420px;
+    }
 
 }
+
+/*  ---- Feature section area css code ---- */
+.feature{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+    margin-bottom: 50px;
+}
+
+
+/* for text */
+.feature-description{
+    margin-left: 70px;
+    max-width: 537px;
+}
+
+.feature-description >h1{
+    font-family: Work Sans;
+    font-size: 2.8rem;
+    font-weight: 700;
+
+    margin-bottom: 25px;
+}
+ .title-part-1{
+    color:rgb(114, 114, 114);
+    font-weight: 500;
+
+}
+.title-part-2{
+    color: rgb(255, 144, 14);
+}
+
+.feature-description >p{
+    color: rgb(114, 114, 114);
+    font-family: Work Sans;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: left;
+
+    margin-bottom: 25px;
+}
+
+/* For img grp */
+.feature-img-grp{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+
+    margin-top: 85px;
+}
+
+.feature-img-grp> img{
+    max-width: 280px;
+    width: 100%;
+}
+
+/* for small devices */
+@media screen and (max-width:600px) {
+    .feature{
+        display: grid;
+    }
+    .feature-img-grp{
+        grid-template-columns: repeat(1,1fr);
+        margin: 0 auto;
+    }
+
+    /* to make the description's alingment center */
+    .feature-description{
+        max-width: 420px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       
+    }
+    .feature-description > h1{
+        text-align: center;
+    }
+    .feature-description >p{
+        text-align: center;
+    }
+}
+
