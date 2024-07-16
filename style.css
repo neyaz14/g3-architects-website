@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* ------ Header  ---*/
+header{
+
+    background: rgba(255, 144, 14, 0.1);
+    /* width: 1920px; */
+    height: 1322px;
+}
+.navbar , .banner{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+/* nav bar */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* G3 Architects --text er  */
+.brand{
+    color: rgb(19, 19, 19);
+    font-family: Work Sans;
+    font-size: 45px;
+    /* px na diye rem --for making this responsive */
+    /* font-size: 3rem; */
+    font-weight: 700;
+
+    margin-top: 50px;
+    margin-left: 130px;
+}
+
+/*  right side er text gula pasapasi ante*/
+.nav-links{
+    display: flex;
+    justify-content: center;
+}
+
+/* right side er full text-box */
+.nav-links{
+    list-style: none;
+    margin-right: 100px;
+    margin-top: 63px;
+}
+
+/* nav er right side er text */
+.nav-links >li>a{
+    text-decoration: none;    
+    color: rgb(66, 66, 66);
+    font-family: Work Sans;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+
+    margin-right: 30px;
+}
+
+/* banner description --- */
+.banner{
+    margin-top: 100px;
+    max-width: 990px;
+    
+   
+}
+.banner-description{
+    max-width: 868px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-bottom: 70px;
+}
+.banner-description >h1{
+    color: rgb(19, 19, 19);
+    font-family: Work Sans;
+    font-size: 4rem;
+    font-weight: 700;
+    text-align: center;
+}
+.banner-description > p{
+    color: rgb(114, 114, 114);
+    font-family: Work Sans;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+
+
+/* this is also shared btn code */
+.btn{
+    color: rgb(255, 255, 255);
+    font-family: Work Sans;
+    font-size: 1.25 rem;
+    font-weight: 600;
+    border-radius: 8px;
+    background: rgb(255, 144, 14);
+
+    border: none;
+    padding: 15px 25px;
+}
+
+.banner-img{
+    width: 100%;
+
+}
+
+
+/* Responsive media for mobile */
+@media screen and (max-width:590px) {
+    .navbar , .nav-links{
+        /* display: flex; */
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+        margin: 0 auto;
+        
+    }
+    .nav-links{
+        margin-top: 20px;
+        gap: 10px;
+    }
+    .brand{
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+    /*  */
+
+
+
+
+
+
+}
